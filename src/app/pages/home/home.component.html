@@ -1,0 +1,61 @@
+ <section class="home">
+    <div class="home__content flex">
+        <div class="home__content--bg">
+            <h1 class="header__logo">
+                <img src="../../../assets/images/logo.png" alt="">
+            </h1>
+
+        </div>
+        <div class="home__content--form">
+            <span class="text text__center">Bem Vindo!</span>
+            <span class="text text__small text__center text__light">Faça login com a sua conta</span>
+
+            <form action="" class="form">
+                <div class="form__group">
+                    <label for="username">Nome de usúario</label>
+                    <div class="form__control">
+                        <input type="text" id="appLogin" [(ngModel)] = "appUser.appLogin" name="appLogin">
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label for="password">Senha</label>
+                    <div class="form__control">
+                        <input type="password" [(ngModel)] = "appUser.appSenha" id="appSenha" name="appSenha">
+                    </div>
+                    <a href="#" class="link text__right">Esqueceu sua senha?</a>
+                </div>
+
+                <button class="btn btn__success" type="submit" (click)="login()">Login</button>
+            </form>        
+        </div>
+
+    </div>  
+</section>
+
+<!-- <form >
+
+    <div class="form-group"> 
+  
+       <h3>Login do sistema</h3>
+    </div> 
+  
+    <div class="form-group">  
+      <label for="login">E-mail:</label>
+      <input type="email" class="form-control" #email=""   id="login" name="login"   required>
+      <div  class="alert alert-danger">
+         Login deve ser informado
+      </div>
+  
+    </div>
+  
+    <div class="form-group"> 
+      <label for="senha">Senha:</label>
+      <input type="password" class="form-control" #senha="" id="senha" name="senha"  required>
+       <div  class="alert alert-danger">
+         Senha deve ser informada
+      </div>
+    </div>
+  
+    <button type="button" class="btn btn-primary" >Acessar</button>
+  </form> -->

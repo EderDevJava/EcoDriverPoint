@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #48466d;
+    color: #abedd8;
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+label {
+    display: block;
+    color: #dfdfdf;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+button {
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    &__between {
+        justify-content: space-between;
+    }
+}
+
+.text {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    &__center {
+        text-align: center;
+    }
+    &__right {
+        text-align: right;
+    }
+    &__light {
+        font-weight: 100;
+    }
+    &__small {
+        font-size: 1.1rem;
+    }
+}
+
+.form {
+    &__group {
+        margin-bottom: 40px;
+    }
+    &__control {
+        position: relative;
+    }
+}
+
+.link {
+    font-weight: 100;
+    display: block;
+    margin: 10px 0;
+    color: #dfdfdf;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 16px 0;
+
+    &__success {
+        background-color: #45FFCA;
+        
+        &:hover {
+            background-color: #abedd8;
+            box-shadow: 1px 4px 8px 3px rgb(0 0 0 / 36%);
+        }
+    }
+}
